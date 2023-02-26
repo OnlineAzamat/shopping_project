@@ -1,0 +1,10 @@
+CoreUI = >>>>>>>>>> import { Alert } from '@coreui/react';
+
+-----------------------------------------------
+
+CoreUI CSS = >>>>>>>>>>> import '@coreui/coreui/dist/css/coreui.min.css'
+
+-----------------------------------------------
+
+Bootstrap = >>>>>> import 'bootstrap/dist/css/bootstrap.min.css'
+
