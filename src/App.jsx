@@ -4,7 +4,6 @@ import "./style.sass"
 function App() {
   return (
     <div className="App">
-      Test
       <MainComp />
     </div>
   )
