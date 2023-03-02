@@ -1,8 +1,8 @@
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.jpg"
 
 export default function mainComp() {
     return (
-        <main>
+        <main className="nav">
             <nav>
                 <div className="inner-nav">
                     <div className="phone">
@@ -40,9 +40,9 @@ export default function mainComp() {
                 <div className="inner-head">
                     <div className="logo">
                         <img src={logo} alt="logo" />
-                        <h1>ShopCart</h1>
+                        <h1>Shopcart</h1>
                     </div>
-                    <ul>
+                    <ul className="nav">
                         <li>
                             <a href="/">
                                 <span>Categories</span>
@@ -65,14 +65,19 @@ export default function mainComp() {
                             </a>
                         </li>
                     </ul>
-                    <div className="inner_search">
-                        <input type="search" name="a" id="a" />
+                    <div className="search_wrapper">
+                        <div className="inner_search">
+                            <input type="text" placeholder="Search Product" name="search" id="search" />
+                            <label htmlFor="search">
+                                <i className="bi bi-search" htmlFor="search"></i>
+                            </label>
+                        </div>
                     </div>
-                    <div className="account">
+                    <div className="account" title="Account">
                         <i className="bi bi-person"></i>
                         <span>Account</span>
                     </div>
-                    <div className="cart">
+                    <div className="cart" title="Cart">
                         <i className="bi bi-cart"></i>
                         <span>Cart</span>
                     </div>

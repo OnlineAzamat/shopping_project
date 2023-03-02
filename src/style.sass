@@ -19,7 +19,7 @@ $items-gap: 2vw
 a
     text-decoration: none
 
-main
+main.nav
     color: #fff
     font-size: 14px
 
@@ -101,7 +101,8 @@ main
             padding: 15px 0
             display: flex
             justify-content: space-between
-            background-color: $main-back-color
+            color: #000
+            font-weight: 600
 
             .logo
                 display: flex
@@ -110,4 +111,60 @@ main
                 img
                     width: 5em
 
+            ul
+                list-style: none
+                display: flex
+                align-items: center
+                gap: 2em
+                font-size: 1.3em
 
+                li
+                    a
+                        display: flex
+                        align-items: center
+                        gap: $icon-text-gap
+                        color: #000
+                        transition: all $transition-2
+                        i
+                            display: inline-block
+                            font-size: .8em
+                            transform: rotateZ(0) translateY(.1em)
+                            transition: $transition-2
+                        &:hover
+                            color: #636363
+                            i
+                                transform: rotateZ(180deg)
+
+            .search_wrapper
+                width: 20vw
+                margin-left: 4em
+                display: flex
+                align-items: center
+                .inner_search
+                    position: relative
+                    width: 100%
+                    padding: 10px 15px
+                    background-color: #F5F7F9
+                    border-radius: 25px
+                    input
+                        width: calc( 100% - 15px )
+                        border: none
+                        outline: none
+                        background-color: transparent
+                    label
+                        position: absolute
+                        top: 50%
+                        right: 15px
+                        transform: translateY(-50%)
+
+            .account, .cart
+                display: flex
+                align-items: center
+                gap: $icon-text-gap
+                font-size: 1.3em
+                cursor: pointer
+                transition: all $transition-2
+                &:hover
+                    opacity: .5
+                i
+                    font-size: 1.4em
